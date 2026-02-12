@@ -22,6 +22,12 @@ nix.settings.experimental-features = [ "nix-command" "flakes" ];
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";  # or "daily"
+    options = "--delete-generations +3";
+  };
 
   # Use latest kernel.
   boot.kernelPackages = pkgs.linuxPackages_latest;
