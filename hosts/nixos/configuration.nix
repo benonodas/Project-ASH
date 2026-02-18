@@ -10,6 +10,7 @@
   ...
 }:
 
+
 {
   imports =
     [ # Include the results of the hardware scan.
@@ -124,9 +125,9 @@ home-manager = {
 vscode
 git
 discord
-solaar
 zip
 unzip
+libreoffice
  pavucontrol
  pulseaudio
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
@@ -159,5 +160,6 @@ unzip
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "25.11"; # Did you read the comment?
+
 
 }
